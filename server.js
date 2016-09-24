@@ -18,8 +18,7 @@ app.get('/quit', function(req,res) {
   res.send('closing..');
   app.close();
 });
-
-app.use(express.static(__dirname + "\\public"));
+app.use(express.static(__dirname + "\/public"));
 
 app.listen(port, function(){
 	console.log('Express server started! on : '+ port);
