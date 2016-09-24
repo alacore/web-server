@@ -19,7 +19,7 @@ app.use(middleware.logger);
 // app.use(middleware.requireAuthentication);
 
 app.get('/about', middleware.requireAuthentication, function(req, res) {
-    res.send('About us, nigger');
+    res.send('About Us!');
 });
 
 app.get('/quit', function(req,res) {
